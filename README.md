@@ -2,8 +2,6 @@
 
 Lightweight vuex inspired centralized state management library for all kinds of javascript applications.
 
-![Travis](https://travis-ci.org/jdkanani/verx.svg?branch=master)
-
 ## install
 
 ```bash

@@ -1,7 +1,7 @@
 {
   "name": "verx",
   "version": "0.0.1",
-  "description": "Vuex inspired centralized state management for all kinds of javascript applications",
+  "description": "Vuex inspired centralized state management library for all kinds of javascript applications",
   "main": "lib/library.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
@@ -13,14 +13,7 @@
     "type": "git",
     "url": "https://github.com/jdkanani/verx.git"
   },
-  "keywords": [
-    "flux",
-    "react-native",
-    "vuex",
-    "redux",
-    "vue",
-    "react"
-  ],
+  "keywords": ["flux", "react-native", "vuex", "redux", "vue", "react"],
   "author": "Jaynti Kanani <jdkanani@gmail.com>",
   "license": "MIT",
   "bugs": {
