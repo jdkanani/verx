@@ -11,7 +11,22 @@ let store;
 
 describe('Given an instance of verx', () => {
   before(() => {
-    store = new Verx();
+    const countStore = {
+      state: {
+        count: 0
+      },
+      mutations: {
+        increment(state) {
+          state.count++;
+        }
+      }
+    };
+
+    store = new Verx({countStore});
   });
-  describe('when I need the name', () => {});
+
+  it('should check commit and state', () => {
+    store.commit('countStore/increment');
+    expect(store.getState('countStore').count).to.equal(1); // -> 1
+  });
 });

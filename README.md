@@ -25,13 +25,11 @@ const countStore = {
 };
 
 const store = new Verx({
-  modules: {
-    countStore
-  }
+  countStore
 });
 ```
 
-Now, you can can access the state object as ` store.getState('countStore')``, and trigger a state change with the `store.commit` method:
+Now, you can can access the state object as `store.getState('countStore')`, and trigger a state change with the `store.commit` method:
 
 ```js
 store.commit('countStore/increment');
